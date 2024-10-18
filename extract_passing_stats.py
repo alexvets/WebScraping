@@ -45,16 +45,16 @@ WebDriverWait(driver, 10).until(
 )
 
 #Extracting subhead titles (2nd row)
-SubHeadTitles=[]
+subHeadTitles=[]
 for i in range(1,33,1):
     subhead=driver.find_element(By.CSS_SELECTOR,f' #stats_passing > thead:nth-child(3) > tr:nth-child(2) > th:nth-child({i})')
                                        
-    SubHeadTitles.append(subhead.text)
+    subHeadTitles.append(subhead.text)
 
 driver.quit()
 
 #Printing the subhead titles
-print(SubHeadTitles)
+print(subHeadTitles)
 
 
 #Setting up Firefox driver again
@@ -97,7 +97,7 @@ driver.quit()
 
 Titloi=[]
 i=0
-for title in SubHeadTitles:
+for title in subHeadTitles:
     
     
         if i==0:
