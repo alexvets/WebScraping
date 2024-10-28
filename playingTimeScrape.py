@@ -1,3 +1,6 @@
+""" Scraping some data from site 'flashscore' by going through strarting line-ups and collecting the profile link of each player, and then visiting each players profile
+    to get their playing time. 'Button-clicking' is used to reveal more matches, which is very important to surf through the site when webscraping.    
+    """
 from selenium.webdriver import Firefox
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
